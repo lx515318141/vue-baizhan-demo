@@ -9,7 +9,7 @@
 </template>
 <script>
     export default{
-        name:'MyComponent',
+        name:'MyComponent2',
         data(){
             return{
                 count:0,

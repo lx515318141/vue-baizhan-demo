@@ -8,6 +8,14 @@ Vue.config.productionTip = false
 
 new Vue({
   el: '#app',
+  data:{
+    rootMsg:'我是团藏，也就是传说中的根实例!'
+  },
+  methods:{
+    getMsg(){
+      return this.rootMsg
+    }
+  },
   components: { App },
   template: '<App/>'
 })
