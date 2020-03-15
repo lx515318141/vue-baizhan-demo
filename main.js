@@ -3,6 +3,26 @@
 import Vue from 'vue'
 import App from './App'
 
+// 注册全局自定义指令
+// Vue.directive('focus',{
+//   inserted:function(el){
+//     el.focus();
+//   }
+// })
+import "./directive"
+// 引入自定义指令
+
+// 定义全局过滤器
+Vue.filter('capitalize', function(value){
+  if(value){
+    value = value.toString();
+    return value.charAt(0).toUpperCase() + value.slice(1)
+  }else{
+    return ''
+  }
+  
+})
+
 Vue.config.productionTip = false
 
 

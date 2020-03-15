@@ -26,7 +26,17 @@
     {{ this.$root.getMsg() }} -->
     <!-- <input ref="input"> -->
     <!-- <APIDemo2 ref="usernameInput" /> -->
-    <Animates />
+    <!-- <Animates /> -->
+    <!-- <life /> -->
+    <JSXFile>
+      <div>我是非具名插槽</div>
+      <template name='header'>我是具名插槽</template>
+    </JSXFile>
+
+    <div>
+      <p>{{ message | capitalize }}</p>
+      <p>{{ '33'|rm }}</p>
+    </div>
   </div>
 </template>
 
@@ -40,6 +50,9 @@ import MyComponent2 from './components/MyComponent2'
 import SlotComponent from './components/SlotComponent'
 import MyComponent3 from './components/MyComponent3'
 import Animates from './components/Animates'
+import life from './components/life'
+import JSXFile from './components/JSXFile'
+import func from '../vue-temp/vue-editor-bridge'
 // 1.引入组件
 
 export default {
@@ -50,7 +63,8 @@ export default {
       fs:['18','19','20'],
       msg:'',
       showSlot:"编译作用域",
-      value:'读取APP的数据'
+      value:'读取APP的数据',
+      message:'hello world'
     }
     
   },
@@ -64,7 +78,9 @@ export default {
     MyComponent2,
     SlotComponent,
     MyComponent3,
-    Animates
+    Animates,
+    life,
+    JSXFile
   },
   // mounted(){
   //   this.$refs.input.value='haha'
@@ -81,6 +97,12 @@ export default {
     // setInput(){
     //   this.$refs.input.value='new'
     // }
+  },
+  filters:{
+    rm:function(value){
+      return "￥"+value;
+      console.log(value)
+    }
   }
 }
 </script>
