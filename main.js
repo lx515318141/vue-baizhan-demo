@@ -9,7 +9,8 @@ import App from './App'
 //     el.focus();
 //   }
 // })
-import "./directive"
+
+// import "./directive"
 // 引入自定义指令
 
 // 定义全局过滤器

@@ -52,7 +52,7 @@ import MyComponent3 from './components/MyComponent3'
 import Animates from './components/Animates'
 import life from './components/life'
 import JSXFile from './components/JSXFile'
-import func from '../vue-temp/vue-editor-bridge'
+
 // 1.引入组件
 
 export default {
