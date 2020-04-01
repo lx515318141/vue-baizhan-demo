@@ -40,7 +40,7 @@ export default {
                 age:20,
             },
             msg:'Hello Vue',
-            isActive:false,
+            isActive:true,
             hasError:true,
             c1:"cs1",
             c2:"cs2"
@@ -58,14 +58,16 @@ export default {
             this.names = totalName
             // 上面是替换数组法
             this.$set(this.names,1,'lix')
+            // $set的三个参数，数组名，要修改的位置，修改进去的内容
             this.names.splice(0,0,'bob')
+            // splice的三个参数，增加/删除项目的位置，要删除项目的个数(为0时就是不删除只增加)，要添加的内容
             // 上面两方法可单独修改数组某一个值（$set和set通用），第二种方法还可以删除、增加项目
             // this.names.splice(newLength)
             // 上面代码可修改数组的长度
         },
         addAttr(){
             this.$set(this.obj,'sex','男')
-            // 此方法可为对象添加属性
+            // 此方法可为对象添加属性，三个参数，对象名，key，value 
         },
         changeActive(){
             this.isActive = !this.isActive

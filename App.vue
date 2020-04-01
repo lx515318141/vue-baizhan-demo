@@ -1,5 +1,15 @@
 <template>
   <div id="app">
+    <!-- <HelloWorld /> -->
+    <!-- <APIDemo1 /> -->
+    <!-- <APIDemo2 /> -->
+    <!-- <MyComponent :name="names"/>
+    <ul>
+      <li v-for="(item,index) in names" :key="index">
+
+      </li>
+    </ul> -->
+    <MyComponent1 :title="hello" :age="20" :friends="fs"/>
     <!-- <MyComponent2 title="标题" @myEvent='eventHandler' @myWatch='msgWatch' />
     {{ msg }} -->
     <!-- <SlotComponent>
@@ -64,7 +74,8 @@ export default {
       msg:'',
       showSlot:"编译作用域",
       value:'读取APP的数据',
-      message:'hello world'
+      message:'hello world',
+      hello:"hi"
     }
     
   },
