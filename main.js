@@ -18,6 +18,9 @@ Vue.filter('capitalize', function(value){
   if(value){
     value = value.toString();
     return value.charAt(0).toUpperCase() + value.slice(1)
+    // charAt(0)取到第一个字符
+    // toUpperCase()转换成大写
+    // slice(1)切割掉第一个字符
   }else{
     return ''
   }

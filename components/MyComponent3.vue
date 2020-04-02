@@ -1,10 +1,10 @@
 <template>
     <div>
-        <!-- 动态组件:
+        动态组件:
         <button @click="changeComponent">切换</button>
         <keep-alive>
             <component :is='currentComponent'></component>
-        </keep-alive> -->
+        </keep-alive>
         <!-- {{ this.$parent.value }} -->
         
     </div>

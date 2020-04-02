@@ -8,6 +8,7 @@
 <script>
 // import CComponent from './CComponent'
 const CComponent = () => import('./CComponent')
+// 使用此方法引入组件，是异步组件加载方法
     export default{
         name:'BComponent3',
         data(){

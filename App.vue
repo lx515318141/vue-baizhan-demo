@@ -9,11 +9,11 @@
 
       </li>
     </ul> -->
-    <MyComponent1 :title="hello" :age="20" :friends="fs"/>
+    <!-- <MyComponent1 :title="hello" :age="20" :friends="fs"/> -->
     <!-- <MyComponent2 title="标题" @myEvent='eventHandler' @myWatch='msgWatch' />
     {{ msg }} -->
     <!-- <SlotComponent>
-      <template v-slot:n1>
+      <template #n1>
         <div>
           我是n1的内容
           <p>{{ showSlot }}</p>
@@ -75,7 +75,8 @@ export default {
       showSlot:"编译作用域",
       value:'读取APP的数据',
       message:'hello world',
-      hello:"hi"
+      hello:"hi",
+      // values:"读取父组件的数据"
     }
     
   },
@@ -93,11 +94,13 @@ export default {
     life,
     JSXFile
   },
-  // mounted(){
-  //   this.$refs.input.value='haha'
-  //   console.log(this.$refs.input)
-  //   // 可在此获取到Dom节点，可以对他进行任意操作，但不推荐操作
-  // },
+  mounted(){
+    // this.$refs.input.value='haha'
+    // this.$refs.input.focus()
+    // 聚焦输入框
+    // console.log(this.$refs.input)
+    // 可在此获取到Dom节点，可以对他进行任意操作，但不推荐操作
+  },
   methods:{
     eventHandler(data){
       console.log(data)
