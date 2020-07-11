@@ -10,8 +10,9 @@ import App from './App'
 //   }
 // })
 
-// import "./directive"
 // 引入自定义指令
+// import "./directive"
+
 
 // 定义全局过滤器
 Vue.filter('capitalize', function(value){

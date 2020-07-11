@@ -39,11 +39,17 @@
     }
 </script>
 <style>
+/* fade显示过程和消失过程 */
 .fade-enter-active, .fade-leave-active {
   transition: opacity .5s;
 }
+/* fade显示前和消失后 */
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
+}
+/* fade消失前和显示后 */
+.fade-enter-to, .fade-leave /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 1;
 }
 .slide-fade-enter,.slide-fade-leave-to{
     transform: translateX(10px);

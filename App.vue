@@ -6,7 +6,7 @@
     <!-- <MyComponent :name="names"/>
     <ul>
       <li v-for="(item,index) in names" :key="index">
-
+        <MyComponent :name="item"/>
       </li>
     </ul> -->
     <!-- <MyComponent1 :title="hello" :age="20" :friends="fs"/> -->

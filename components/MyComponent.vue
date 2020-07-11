@@ -1,6 +1,7 @@
 <template>
   <div>
     <div>
+      <!-- 关于组件的复用 -->
       <p>{{ count }}</p>
       <button @click="count+=1">增加</button>
       <p>{{ name }}</p>

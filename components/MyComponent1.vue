@@ -25,9 +25,9 @@
                 default:1
                 // 默认值与 required:true 互斥，若不传参数时则显示默认值
                 // 当 type为 number，string，Boolean 时可以使用default：1 定义默认值
-                // 当 type 为对象，数组，函数时要以工厂模式进行返回
             },
             friends:{
+                // 当 type 为对象，数组，函数时要以工厂模式进行返回,即返回一个函数
                 type:Array,
                 default:function(){
                     return ['0']
